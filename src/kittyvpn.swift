@@ -20,6 +20,14 @@ extension URLSession {
     }
 }
 
+public enum HTTPMethod: String {
+    case get = "GET"
+    case post = "POST"
+    case put = "PUT"
+    case delete = "DELETE"
+    case patch = "PATCH"
+}
+
 public class Kittyvpn{
     private let api = "https://s3.ru1.storage.beget.cloud/01c6b4d1fccf-thankful-aisling"
     private var headers: [String: String]
