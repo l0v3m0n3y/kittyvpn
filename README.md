@@ -7,8 +7,8 @@ import kittyvpn
 let client = Kittyvpn()
 
 do {
-    let servers_list = try await client.get_servers_list()
-    print(servers_list)
+    let serversList = try await client.getServersList()
+    print(serversList)
 } catch {
     print("Error: \(error)")
 }
